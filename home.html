@@ -1,0 +1,525 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FitnessHealth | Home</title>
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f6fa;
+            color: #192a56;
+        }
+
+        /* Navigation */
+
+        .header_sec {
+            width: 100%;
+            background: #192a56;
+            padding: 20px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.2);
+        }
+
+        .logo h2 {
+            color: white;
+            font-size: 28px;
+            letter-spacing: 1px;
+        }
+
+        .primary_color {
+            color: #eb4d4b;
+        }
+
+        .nav_menu {
+            display: flex;
+            list-style: none;
+            gap: 28px;
+        }
+
+        .nav_menu a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .nav_menu a:hover {
+            color: #eb4d4b;
+        }
+
+        /* Home Section */
+
+        .home_sec {
+            min-height: 580px;
+            background:
+                linear-gradient(rgba(19,15,64,0.82), rgba(25,42,86,0.88)),
+                url("images/gym-banner.jpg");
+
+            background-position: center;
+            background-size: cover;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .home_form {
+            max-width: 850px;
+            color: white;
+        }
+
+        .home_form h1 {
+            font-size: 52px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .home_form h1 span {
+            color: #eb4d4b;
+        }
+
+        .home_form p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #eeeeee;
+            margin-bottom: 30px;
+        }
+
+        /* Buttons */
+
+        .button {
+            display: inline-block;
+            background: #eb4d4b;
+            color: white;
+            padding: 15px 35px;
+            margin: 10px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: bold;
+            border: 2px solid #eb4d4b;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background: #c0392b;
+            border-color: #c0392b;
+            transform: translateY(-4px);
+        }
+
+        .button.secondary {
+            background: transparent;
+            border-color: white;
+        }
+
+        .button.secondary:hover {
+            background: white;
+            color: #192a56;
+        }
+
+        /* Features */
+
+        .features {
+            padding: 70px 7%;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 34px;
+            margin-bottom: 15px;
+        }
+
+        .section-subtitle {
+            color: #777;
+            margin-bottom: 40px;
+            font-size: 16px;
+        }
+
+        .feature-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .feature-box {
+            background: white;
+            padding: 35px 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .feature-box:hover {
+            transform: translateY(-8px);
+        }
+
+        .feature-box i {
+            font-size: 42px;
+            color: #eb4d4b;
+            margin-bottom: 20px;
+        }
+
+        .feature-box h3 {
+            margin-bottom: 15px;
+            font-size: 21px;
+        }
+
+        .feature-box p {
+            color: #666;
+            line-height: 1.7;
+        }
+
+        /* About */
+
+        .home_aboutus {
+            background: #192a56;
+            padding: 65px 10%;
+            text-align: center;
+            color: white;
+        }
+
+        .home_aboutus h2 {
+            font-size: 34px;
+            margin-bottom: 20px;
+        }
+
+        .home_aboutus h2 span {
+            color: #eb4d4b;
+        }
+
+        .home_aboutus p {
+            font-size: 16px;
+            line-height: 1.9;
+            color: #ddd;
+            max-width: 850px;
+            margin: auto;
+        }
+
+        /* Footer */
+
+        footer {
+            background: #101a35;
+            padding: 40px 7% 20px;
+            color: white;
+        }
+
+        .footer-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 35px;
+        }
+
+        .footer-box h3 {
+            color: #eb4d4b;
+            margin-bottom: 20px;
+            font-size: 21px;
+        }
+
+        .footer-box p {
+            color: #ccc;
+            line-height: 2;
+            font-size: 15px;
+        }
+
+        .footer-box i {
+            color: #eb4d4b;
+            width: 22px;
+        }
+
+        .social-icons {
+            margin-top: 15px;
+        }
+
+        .social-icons a {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            background: #192a56;
+            color: white;
+            border-radius: 50%;
+            margin-right: 10px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .social-icons a:hover {
+            background: #eb4d4b;
+        }
+
+        .copyright {
+            border-top: 1px solid #39445d;
+            text-align: center;
+            padding-top: 20px;
+            margin-top: 30px;
+            color: #aaa;
+            font-size: 14px;
+        }
+
+        /* Responsive Design */
+
+        @media(max-width: 768px) {
+
+            .header_sec {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .nav_menu {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+
+            .home_form h1 {
+                font-size: 36px;
+            }
+
+            .feature-container {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <div class="header_sec">
+
+        <div class="logo">
+            <h2><span class="primary_color">Fitness</span>Health</h2>
+        </div>
+
+        <ul class="nav_menu">
+
+            <li><a href="home.html">Home</a></li>
+
+            <li><a href="schedule.html">Schedule</a></li>
+
+            <li><a href="service.html">Service</a></li>
+
+            <li><a href="feedback.php">Feedback</a></li>
+
+            <li><a href="membership.php">Membership</a></li>
+
+        </ul>
+
+    </div>
+
+
+    <!-- Home Section -->
+
+    <div class="home_sec">
+
+        <div class="home_form">
+
+            <h1>
+                Transform Your Body,<br>
+                <span>Transform Your Life</span>
+            </h1>
+
+            <p>
+                Welcome to FitnessHealth! Start your fitness journey with us.
+                Build strength, improve your health and achieve your fitness goals.
+                Join our gym and become the best version of yourself.
+            </p>
+
+            <a href="login.php" class="button">
+                <i class="fa-solid fa-right-to-bracket"></i>
+                Login
+            </a>
+
+			<a href="admin_login.php" class="button secondary">
+				<i class="fa-solid fa-user-shield"></i>
+				Admin Login
+			</a>
+
+            <a href="register.php" class="button secondary">
+                <i class="fa-solid fa-user-plus"></i>
+                Register
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- Features Section -->
+
+    <section class="features">
+
+        <h2 class="section-title">Why Choose FitnessHealth?</h2>
+
+        <p class="section-subtitle">
+            Everything you need for a healthy and active lifestyle.
+        </p>
+
+        <div class="feature-container">
+
+            <div class="feature-box">
+
+                <i class="fa-solid fa-dumbbell"></i>
+
+                <h3>Expert Training</h3>
+
+                <p>
+                    Follow structured workout plans and improve your
+                    strength with regular training.
+                </p>
+
+            </div>
+
+
+            <div class="feature-box">
+
+                <i class="fa-solid fa-calendar-days"></i>
+
+                <h3>Workout Schedule</h3>
+
+                <p>
+                    Manage your daily workout routine and stay
+                    consistent with your fitness journey.
+                </p>
+
+            </div>
+
+
+            <div class="feature-box">
+
+                <i class="fa-solid fa-heart-pulse"></i>
+
+                <h3>Healthy Lifestyle</h3>
+
+                <p>
+                    Build healthy habits, stay active and work
+                    towards a stronger and healthier life.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- About Section -->
+
+    <div class="home_aboutus">
+
+        <h2>About <span>FitnessHealth</span></h2>
+
+        <p>
+            FitnessHealth is a gym management platform designed to make
+            your fitness journey easy and organized. Explore membership
+            plans, manage workout schedules, track your membership and
+            stay connected with your fitness goals. Our aim is to help
+            everyone move towards a healthier lifestyle.
+        </p>
+
+    </div>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-box">
+
+                <h3>Contact Information</h3>
+
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    Telephone No: 0233-017381
+                </p>
+
+                <p>
+                    <i class="fa-brands fa-whatsapp"></i>
+                    WhatsApp No: 8765432120
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    Email: fitnesshealth007@gmail.com
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Address: Palash Apartment, 2nd Floor,
+                    M.G. Vishrambag, Sangli - 416416.
+                </p>
+
+            </div>
+
+
+            <div class="footer-box">
+
+                <h3>Follow Us</h3>
+
+                <p>Stay connected with FitnessHealth.</p>
+
+                <div class="social-icons">
+
+                    <a href="#" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" aria-label="WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            <p>
+                © 2026 FitnessHealth. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+# Local database configuration
+config.php
+
+# XAMPP / local files
+test_connection.php
+
+# Temporary files
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+fitnesshealth_db.sql

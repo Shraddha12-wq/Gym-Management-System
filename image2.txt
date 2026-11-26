@@ -1,0 +1,52 @@
+<div class="gallery-sec">
+		<h1 class="section-title">Picture Perfect</h1>
+		<div class="gallery-row">
+			<div class="gallery-card">
+				<img src="img/pexels-li-sun-371049.jpg">
+			</div>
+			<div class="gallery-card">
+				<img src="img/runing.jpg">
+			</div>
+			<div class="gallery-card">
+				<img src="img/4489-gym_people_exercise-1296x728-header-1200x628.jpg">
+			</div>			
+		</div>		
+	</div>
+<footer>
+		
+		<div class="footer_nav">
+			<div class="footer_menu">
+				<h3>Useful Equipment</h3>
+				<ul>
+					<a href="#"><li>Free Weights</li></a>
+					<a href="#"><li>Battle Ropes</li></a>
+					<a href="#"><li>Rowing Machines Ellipticals</li></a>
+					<a href="#"><li>weight Benches</li></a>
+					<a href="#"><li>Power Racks</li></a>
+				</ul>
+			</div>
+			<div class="footer_menu">
+				<h3>About Us</h3>
+				<ul>
+					<a href="#"><li>Improve your brain health</li></a>
+					<a href="#"><li>Help manag weight</li></a>
+					<a href="#"><li>Reduce the risk of disease</li></a>
+					<a href="#"><li>Strenghen bones and muscles</li></a>
+					<a href="#"><li>improve everyday activities</li></a>
+				</ul>
+			</div>
+			<div class="footer_menu">
+				<h3>Services</h3>
+				<ul>
+					<a href="#"><li>Cardio machines</li></a>
+					<a href="#"><li>Weight fitting equipment</li></a>
+					<a href="#"><li>Fitness classes</li></a>
+					<a href="#"><li>Personal training</li></a>
+					<a href="#"><li>Physical therapy</li></a>
+				</ul>
+			</div>
+			
+		</div>
+		
+			<p> <span class="primary_color">Fitness</span>Health 2024 - ❤️All rights reserved | made with ❤️</p>
+	</footer>
